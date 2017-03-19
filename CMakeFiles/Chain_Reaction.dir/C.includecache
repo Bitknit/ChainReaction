@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sandesh/ClionProjects/Chain Reaction/core.h
+
+/home/sandesh/ClionProjects/Chain Reaction/header.h
+core.h
+/home/sandesh/ClionProjects/Chain Reaction/core.h
+
+/home/sandesh/ClionProjects/Chain Reaction/main.c
+gtk-3.0/gtk/gtk.h
+-
+stdlib.h
+-
+header.h
+/home/sandesh/ClionProjects/Chain Reaction/header.h
+core.h
+/home/sandesh/ClionProjects/Chain Reaction/core.h
+
