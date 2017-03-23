@@ -57,7 +57,10 @@
           <object class="GtkLabel" id="playerLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Turn of User 1</property>
+            <property name="label" translatable="yes">Turn: Player 2</property>
+            <attributes>
+              <attribute name="font-desc" value="Roboto Light 13"/>
+            </attributes>
           </object>
           <packing>
             <property name="left_attach">1</property>

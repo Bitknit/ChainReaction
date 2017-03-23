@@ -52,7 +52,7 @@
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="playBtn">
                 <property name="label" translatable="yes">Play Game</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -65,7 +65,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="instBtn">
                 <property name="label" translatable="yes">Instructions</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -78,7 +78,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="credBtn">
                 <property name="label" translatable="yes">Credits</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -91,22 +91,26 @@
               </packing>
             </child>
             <child>
-              <placeholder/>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">5</property>
+              </packing>
             </child>
             <child>
-              <placeholder/>
-            </child>
-            <child>
-              <placeholder/>
-            </child>
-            <child>
-              <placeholder/>
-            </child>
-            <child>
-              <placeholder/>
-            </child>
-            <child>
-              <placeholder/>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">6</property>
+              </packing>
             </child>
             <child>
               <placeholder/>

@@ -1,6 +1,6 @@
 
 This game was developed as a part of syllabus for computer
- programming in the C programming Language at IOE, Pulchowk.
+programming in the C programming Language at IOE, Pulchowk.
 
 This game is freely licensed under the GNU GPL and its source code
 available on the group's github account at:

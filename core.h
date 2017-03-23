@@ -18,6 +18,7 @@ void checkMove(int x, int y, int u, GtkWidget *button){
         img = gtk_image_new_from_file(imageName);
         gtk_button_set_image(GTK_BUTTON(b[x][y]), img);
         checkExplode();
+        labelUpdate();
         userCurrent++;
     }
     else{
@@ -36,12 +37,6 @@ void checkExplode(){
                 break;
             }
         }
-    }
-    if(checkGame() !=0){
-        char winner[10];
-        removeLabels();
-        sprintf(winner, "User %d won the game!", checkGame());
-        gtk_label_set_text(label, winner);
     }
 }
 int propagate(int x, int y){
@@ -261,7 +256,6 @@ void update(){
         printf("\n");
     }
     printf("\n------------------------------------------\n");
-
 }
 
 int returnState(int x, int y){
@@ -303,6 +297,20 @@ void removeLabels(){
         for(j=0; j<5; j++){
             gtk_widget_set_sensitive(GTK_WIDGET(b[i][j]), 0);
         }
+    }
+}
+void labelUpdate(){
+    if(checkGame() !=0){
+        char winner[10];
+        removeLabels();
+        sprintf(winner, "User %d won the game!", checkGame());
+        gtk_label_set_text(label, winner);
+    }
+    else {
+        char turnName[20];
+        sprintf(turnName, "Turn: player %d", userCurrent);
+        printf("\a");
+        gtk_label_set_text(label, turnName);
     }
 }
 #endif
