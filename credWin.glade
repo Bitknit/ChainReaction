@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.0 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkAction" id="action1">
+    <property name="label" translatable="yes">Goto Account</property>
+    <property name="short_label" translatable="yes">Account</property>
+    <property name="tooltip" translatable="yes">Goto the link</property>
+    <property name="stock_id">gtk-go-forward</property>
+  </object>
+  <object class="GtkApplicationWindow" id="credWin">
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">450</property>
+    <property name="default_height">580</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">202</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Credits</property>
+            <attributes>
+              <attribute name="font-desc" value="Roboto Light 15"/>
+              <attribute name="foreground" value="#2e2e34343636"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">116</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">372</property>
+            <property name="height_request">414</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_top">1</property>
+            <property name="label">
+This game was developed as a part of syllabus for computer
+ programming in the C programming Language at IOE, Pulchowk.
+
+This game is freely licensed under the GNU GPL and its source code
+available on the group's github account at:
+
+
+
+
+Special Thanks goes to our Teacher Mr. Ajaya Puri, for his valuable 
+guidance during the preparation of this project
+
+Prepared and Submitted by:
+
+Prasanga Dhungel  	( 073BCT 527 )
+Sandesh  Bhusal     	( 073BCT 539 )
+Sobit         Neupane 	( 073BCT 543 )
+Sushant   Thapa          ( 073BCT 547 )
+
+Technologies used in the preparation of this project:
+
+GTK-3.0             
+C
+Glade Designer</property>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">45</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width_request">280</property>
+            <property name="height_request">31</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="margin_right">47</property>
+            <property name="has_frame">False</property>
+            <property name="text" translatable="yes">https://www.github.com/bitknit/chainReaction</property>
+            <property name="shadow_type">none</property>
+          </object>
+          <packing>
+            <property name="x">47</property>
+            <property name="y">183</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

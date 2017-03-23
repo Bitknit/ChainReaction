@@ -21,8 +21,10 @@
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">Chain Reaction</property>
             <attributes>
+              <attribute name="font-desc" value="Roboto Light 15"/>
               <attribute name="weight" value="thin"/>
               <attribute name="scale" value="1.2"/>
+              <attribute name="foreground" value="#0000a1a1ffff"/>
             </attributes>
           </object>
           <packing>
