@@ -31,10 +31,10 @@ void checkExplode(){
     int i, j;
     for(i=0; i<5; i++){
         for(j=0; j<5; j++){
-            if(reac[i][j] > 3){
+            if(reac[i][j] >= 4){
                 propagate(i, j);
-                i = 0;
-                break;
+//                i = 0;
+//                break;
             }
         }
     }
@@ -270,7 +270,12 @@ int returnState(int x, int y){
         return (state + 1);
     }
     else{
-        return reac[x][y] + 1;
+        if(reac[x][y] > 3){
+            return 3;
+        }
+        else{
+            return reac[x][y] + 1;
+        };
     }
 }
 
@@ -307,10 +312,25 @@ void labelUpdate(){
         gtk_label_set_text(label, winner);
     }
     else {
+        GdkColor color1;
+        GdkColor color2;
+        GdkColor fore;
+
+        gdk_color_parse("#00a1ff", &color1);
+        gdk_color_parse("#ff7f50", &color2);
+        gdk_color_parse("#ffffff", &fore);
+
         char turnName[20];
         sprintf(turnName, "Turn: player %d", userCurrent);
         printf("\a");
         gtk_label_set_text(label, turnName);
+        if(userCurrent == 1){
+            gtk_widget_modify_bg(GTK_LABEL(label), GTK_STATE_NORMAL, &color1);
+        }
+        else{
+            gtk_widget_modify_bg(GTK_LABEL(label), GTK_STATE_NORMAL, &color2);
+        }
+        gtk_widget_modify_fg(GTK_LABEL(label), GTK_STATE_NORMAL, &fore);
     }
 }
 #endif

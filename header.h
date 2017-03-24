@@ -11,14 +11,6 @@ GtkWidget  *label;
 
 GtkWidget *b[5][5];
 
-GtkWidget *u1r;
-GtkImage *u1s;
-GtkImage *u1g;
-
-GtkImage *u2r;
-GtkImage *u2s;
-GtkImage *u2g;
-
 char imageName[10];
 char prompt[100];
 int userCurrent = 1;
